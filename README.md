@@ -10,3 +10,7 @@ A simple web application to track income and expenses.
     HTML
     Javascript
     LocalStorage
+
+## Preview
+
+![FinanceTracker Screenshot](output.png)
