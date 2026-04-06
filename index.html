@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FinanceTracker</title>
+</head>
+<body>
+
+    <h1>FinanceTracker</h1>
+
+    <h2>Balance: $<span id="balance">0</span></h2>
+
+    <h3>Add Transaction</h3>
+
+    <input type="number" id="amount" placeholder="Enter amount"><br><br>
+
+    <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+    </select><br><br>
+
+    <input type="text" id="category" placeholder="Enter category"><br><br>
+    
+
+    <button onclick="addTransaction()">Add Transaction</button>
+    
+<h3>Filter</h3>
+
+<select id="filter" onchange="filterTransactions()">
+    <option value="all">All</option>
+    <option value="income">Income</option>
+    <option value="expense">Expense</option>
+</select>
+    <h3>Transaction History</h3>
+    <ul id="list"></ul>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
